@@ -29,7 +29,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SWY-DT-OqI" secondAttribute="bottom" id="jQ9-ie-gAx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Xq8-Us-95k"/>
+                    <navigationItem key="navigationItem" id="Xq8-Us-95k">
+                        <barButtonItem key="leftBarButtonItem" title="Zoom" id="0X2-lw-3el">
+                            <connections>
+                                <action selector="whenZoomButtonPressed:" destination="BYZ-38-t0r" id="DkK-Pf-4aB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="OQW-GK-0BA">
+                            <connections>
+                                <action selector="whenSearchButtonPressed:" destination="BYZ-38-t0r" id="BPM-CG-K01"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="SWY-DT-OqI" id="d1x-9r-n38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
